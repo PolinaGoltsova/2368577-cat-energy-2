@@ -2,17 +2,37 @@
 <html class="page" lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Название проекта</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="styles/styles.css">
-	<script src="scripts/index.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-	<header class="header">Шапка</header>
-	<p>привет!</p>
-	<p>привет!</p>
+  <header class="header">
+    <a class="header_logo logo" href="index.html">
+      <img src="images/" width="33" height="38" alt="логотип Кэт энерджи">
+      <p class="logo_name">CAT ENERGY</p>
+    </a>
+    <nav class="header_navigation navigation">
+      <ul class="navigation_list">
+        <li class="navigation_item main-nav_item--current">
+          <a class="navigation_link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav_item main-nav_item--current">
+          <a class="navigation_link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav_item main-nav_item--current">
+          <a class="navigation_link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+      <button class="navigation_button" type="button">
+        <span class="visually-hidden">открывает/скрывает меню</span>
+      </button>
+    </nav>
+  </header>
+
 </body>
 
 </html>

@@ -45,7 +45,11 @@
     <section class="main-description">
       <h2 class="main-description__title">Функциональное питание для котов</h2>
       <p class="main-description__description">Занялся собой? Займись котом!</p>
-      <img class="main-description__image" src="images" width="280" height="270" alt="изображение товара">
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/main-can-desktop@1x.png 1x, images/main-can-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/main-can-tablet@1x.png 1x, images/main-can-tablet@2x.png 2x">
+        <img class="main-description__image" src="images/main-can-mobile@1x.png" srcset="images/main-can-mobile@2x.png 2x" width="280" height="270" alt="изображение товара">
+      </picture>
       <a class="main-description__button button" href="#" aria-label="Подобрать программу корма для животного">Подобрать программу</a>
     </section>
     <section class="programs">

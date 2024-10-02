@@ -107,7 +107,11 @@
         <p class="results__total-title">Затраты на питание:</p>
         <p class="results__total-content">15 000 РУБ.</p>
       </div>
-      <img class="results__image" src="images" width="280" height="256" alt="кот до и после приема курса корма">
+      <picture>
+        <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slider-tablet@1x.png 1x, images/cat-slider-tablet@2x.png 2x">
+        <img class="results__image" src="images/cat-slider-mobile@1x.png" srcset="images/cat-slider-mobile@2x.png 2x" width="280" height="256" alt="кот до и после приема курса корма">
+      </picture>
+
     </section>
     <section class="cooperation">
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>

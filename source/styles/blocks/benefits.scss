@@ -13,9 +13,53 @@
   list-style-type: none;
 }
 
-// .benefits__item {
+.benefits__item {
+  position: relative;
+}
 
-// }
+.benefits__item--leaf::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.benefits__item--powder::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.benefits__item--cutlery::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-cutlery");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.benefits__item--watch::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-watch");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 // .benefits__item-description {
 

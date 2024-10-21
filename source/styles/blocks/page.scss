@@ -1,7 +1,22 @@
-// .page {
+.page {
+  height: 100%;
+}
 
-// }
+.page__body {
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  min-width: 280px;
+  margin: 0 20px;
+  display: block;
 
-// .page__body {
+  @media screen and (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 30px;
+  }
 
-// }
+  @media screen and (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 110px;
+  }
+}
+

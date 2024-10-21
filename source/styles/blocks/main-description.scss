@@ -1,21 +1,56 @@
 .main-description {
   color: #ffffff;
-  background-color: $brand_green;
   font-family: $secondary-font;
   background-image: url("../../images/background-main-image-mobile@2x.png");
   background-repeat: no-repeat;
   background-size: 320px 302px;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.main-description::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../../images/background-main-image-mobile@2x.png");
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 684px;
+    position: absolute;
+    right: -30px;
+    bottom: 100px;
+    z-index: -1;
+  }
 }
 
 
 .main-description__title {
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-description__text {
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 // .main-description__image {

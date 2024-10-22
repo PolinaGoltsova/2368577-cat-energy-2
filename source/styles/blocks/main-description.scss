@@ -15,6 +15,8 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    display: grid;
+    grid-template: "title  img" auto "text   img" auto "button img" 54px / 1fr 1fr;
   }
 }
 
@@ -41,6 +43,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-area: title;
+  }
 }
 
 .main-description__text {
@@ -51,12 +57,28 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-area: text;
+  }
+}
+
+.main-description__image-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: img;
+  }
 }
 
 // .main-description__image {
 
 // }
 
-// .main-description__button {
-
-// }
+.main-description__button {
+  @media (min-width: $desktop-width) {
+    grid-area: button;
+  }
+}

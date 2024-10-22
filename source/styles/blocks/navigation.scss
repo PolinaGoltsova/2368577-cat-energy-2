@@ -31,6 +31,12 @@
   }
 }
 
+.navigation__link--dark {
+  @media (min-width: $desktop-width) {
+    color: #000000;
+  }
+}
+
 .navigation__button {
   background-image: url("../../icons/stack.svg#icon-burger");
   width: 24px;

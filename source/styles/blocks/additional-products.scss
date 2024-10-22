@@ -2,6 +2,15 @@
 
 // }
 
+.additional-products__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .additional-products__title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -11,6 +20,12 @@
 
 .additional-products__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
 }
 
 

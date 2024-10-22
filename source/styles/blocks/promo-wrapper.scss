@@ -6,6 +6,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    height: 200px;
+    background-image: url("../../images/background-promo-image-tablet@2x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+    background-image: url("../../images/background-promo-image-decktop@2x.png");
+  }
 }
 
 .promo-wrapper::before {

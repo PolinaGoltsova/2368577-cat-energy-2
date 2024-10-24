@@ -1,7 +1,11 @@
 .main-description {
   color: #ffffff;
   font-family: $secondary-font;
-  background-image: url("../../images/background-main-image-mobile@2x.png");
+  background-image: url("../../images/background-main-image-mobile@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/background-main-image-mobile@2x.png");
+  }
   background-repeat: no-repeat;
   background-size: 320px 302px;
   display: flex;
@@ -23,7 +27,11 @@
 .main-description::after {
   @media (min-width: $desktop-width) {
     content: "";
-    background-image: url("../../images/background-main-image-mobile@2x.png");
+    background-image: url("../../images/background-main-image-decktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/background-main-image-decktop@2x.png");
+    }
     background-repeat: no-repeat;
     width: 720px;
     height: 684px;

@@ -27,6 +27,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     padding-bottom: 92px;
+    counter-reset: benefit 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +42,7 @@
   @media (min-width: $tablet-width) {
     max-width: 249px;
     height: 280px;
+    counter-increment: benefit 1;
   }
 }
 
@@ -75,6 +77,21 @@
   background-image: url("../../icons/stack.svg#icon-watch");
 }
 
+.benefits__item::after {
+  @media (min-width: $tablet-width) {
+    background-repeat: no-repeat;
+    font-family: $secondary-font;
+    font-weight: 280px;
+    line-height: 280px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: counter(benefit);
+    z-index: -1;
+    color: $basic_grey;
+  }
+}
+
 .benefits__item-description {
   width: 200px;
   padding-left: 80px;
@@ -86,14 +103,3 @@
   }
 }
 
-.benefits__item-number {
-  display: none;
-  font-family: $secondary-font;
-  font-size: 280px;
-  line-height: 280px;
-  color: $basic_grey;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-  }
-}

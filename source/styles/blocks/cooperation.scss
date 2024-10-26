@@ -1,13 +1,20 @@
 .cooperation {
   display: flex;
   justify-content: space-between;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 565px;
     height: 199px;
     align-items: center;
+    padding: 60px 80px;
   }
 }
+
 
 // .cooperation__container {
 

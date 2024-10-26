@@ -25,18 +25,18 @@
 }
 
 .main-description::after {
-  @media (min-width: $desktop-width) {
-    content: "";
-    background-image: url("../../images/background-main-image-decktop@1x.png");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/background-main-image-decktop@2x.png");
+  }
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/background-main-image-decktop@2x.png");
-    }
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/background-main-image-decktop@1x.png");
+    content: "";
     background-repeat: no-repeat;
     width: 720px;
     height: 684px;
     position: absolute;
-    right: -30px;
+    right: -14px;
     bottom: 100px;
     z-index: -1;
   }

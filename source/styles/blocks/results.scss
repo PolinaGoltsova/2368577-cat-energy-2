@@ -1,11 +1,17 @@
 .results {
   background-color: #eaeaea;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 

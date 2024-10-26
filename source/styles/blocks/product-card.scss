@@ -1,6 +1,7 @@
 .product-card {
-  width: 320px;
+  width: 280px;
   height: 209px;
+
 
   @media (min-width: $tablet-width) {
     background-color: $basic_grey;

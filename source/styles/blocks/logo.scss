@@ -2,11 +2,36 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
+  padding: 0 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0;
+    margin-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 543px;
+  }
 }
 
-// .logo__picture {
+.logo__picture {
+  margin-right: 56px;
+  display: block;
 
-// }
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+}
 
 // .logo__name {
 

@@ -23,10 +23,13 @@
       </picture>
       <img class="logo__name logo__name--desktop" src="images/logo-name.svg" width="101" height="18" alt="название логотипа Кэт энерджи">
     </a>
+    <button class="header__button-close header__button-close--disabled" type="button" aria-label="Открыть меню сайта">
+      <span class="visually-hidden">открывает/скрывает меню</span>
+    </button>
     <nav class="header__navigation navigation">
       <ul class="navigation__list">
-        <li class="navigation__item navigation__item--current">
-          <a class="navigation__link" href="index.html">Главная</a>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current navigation__link--current-another" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">Каталог продукции</a>
@@ -35,9 +38,6 @@
           <a class="navigation__link" href="#">Подбор программы</a>
         </li>
       </ul>
-      <button class="navigation__button navigation__button--close" type="button" aria-label="Открыть меню сайта">
-        <span class="visually-hidden">открывает/скрывает меню</span>
-      </button>
     </nav>
   </header>
   <main class="main">

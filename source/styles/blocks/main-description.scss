@@ -1,5 +1,6 @@
 .main-description {
   color: #ffffff;
+  text-align: center;
   font-family: $secondary-font;
   background-image: url("../../images/background-main-image-mobile@1x.png");
 
@@ -10,17 +11,24 @@
   background-size: 320px 302px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 
 
   @media (min-width: $tablet-width) {
     color: #000000;
     background-image: none;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     display: grid;
-    grid-template: "title  img" auto "text   img" auto "button img" 54px / 1fr 1fr;
+    // grid-template: "title  img" auto "text   img" auto "button img" 54px / auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 54px auto;
+    margin-bottom: 100px;
   }
 }
 
@@ -36,8 +44,8 @@
     width: 720px;
     height: 684px;
     position: absolute;
-    right: -14px;
-    bottom: 100px;
+    right: 0;
+    bottom: -45px;
     z-index: -1;
   }
 }
@@ -46,14 +54,24 @@
 .main-description__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 25px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: start;
+    padding-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: title;
+    padding-left: 190px;
+    grid-column: 1 / 2;
   }
 }
 
@@ -61,33 +79,58 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
+    padding-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: text;
+    padding-left: 190px;
+    text-align: start;
+    margin-bottom: 52px;
+    grid-column: 1 / 2;
   }
 }
 
 .main-description__image-wrapper {
   @media (min-width: $tablet-width) {
     order: 1;
+    z-index: -1;
+    margin-top: -83px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: img;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    padding: 0;
+    margin-top: -50px;
+    margin-left: -490px;
   }
 }
 
-// .main-description__image {
-
-// }
 
 .main-description__button {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 242px;
+    height: 54px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 120px;
+  }
+
   @media (min-width: $desktop-width) {
-    grid-area: button;
+    margin-left: 190px;
+    grid-column: 1 / 2;
   }
 }

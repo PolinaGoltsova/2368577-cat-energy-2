@@ -37,10 +37,6 @@
   right: 20px;
   top: 20px;
 
-  &--disabled {
-    display: block;
-  }
-
 
   @media (min-width: $tablet-width) {
     display: none;

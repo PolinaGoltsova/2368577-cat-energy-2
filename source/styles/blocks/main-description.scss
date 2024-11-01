@@ -12,14 +12,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
 
   @media (min-width: $tablet-width) {
     color: #000000;
     background-image: none;
     align-items: flex-start;
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +28,7 @@
     // grid-template: "title  img" auto "text   img" auto "button img" 54px / auto auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 54px auto;
-    margin-bottom: 100px;
+    padding-bottom: 120px;
   }
 }
 
@@ -45,7 +45,7 @@
     height: 684px;
     position: absolute;
     right: 0;
-    bottom: -45px;
+    bottom: 75px;
     z-index: -1;
   }
 }

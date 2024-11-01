@@ -10,18 +10,13 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 34px;
-    padding-top: 25px;
-    margin-bottom: 65px;
+    padding: 25px 34px 65px 30px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
     color: #ffffff;
-    padding: 0 110px;
-    padding-top: 55px;
-    margin-bottom: 74px;
+    padding: 55px 110px 74px;
   }
 }
 

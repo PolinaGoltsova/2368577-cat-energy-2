@@ -190,6 +190,11 @@
     margin-right: 0;
     margin-bottom: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 63px;
+  }
 }
 
 .results__total-content {

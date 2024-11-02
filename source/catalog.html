@@ -23,11 +23,14 @@
       </picture>
       <img class="main-logo__name-header" src="images/logo-name.svg" width="101" height="18" alt="название логотипа Кэт энерджи">
     </a>
-    <button class="header__button-close" type="button" aria-label="Открыть меню сайта">
-      <span class="visually-hidden">открывает/скрывает меню</span>
+    <button class="header__button-open header__button-open--disabled" type="button" aria-label="Открыть меню сайта">
+      <span class="visually-hidden">открывает меню</span>
+    </button>
+    <button class="header__button-close header__button-close--disabled" type="button" aria-label="Открыть меню сайта">
+      <span class="visually-hidden">скрывает меню</span>
     </button>
     <nav class="header__navigation navigation">
-      <ul class="navigation__list">
+      <ul class="navigation__list navigation__list--disabled">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--dark" href="index.html">Главная</a>
         </li>

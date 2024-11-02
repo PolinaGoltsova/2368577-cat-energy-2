@@ -23,6 +23,12 @@
   }
 }
 
+.navigation__list--disabled {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
 .navigation__item {
   list-style-type: none;
   min-height: 65px;

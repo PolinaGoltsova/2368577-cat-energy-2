@@ -20,17 +20,64 @@
   }
 }
 
+.header:hover .header__button-close,
+.header:hover .header__button-open {
+  opacity: 0.6;
+}
+
+.header:active .header__button-close,
+.header:active .header__button-open {
+  opacity: 0.3;
+}
+
 .header__button-close {
-  background-image: url("../../icons/stack.svg#icon-cross-close");
-  width: 18px;
-  height: 18px;
-  background-repeat: no-repeat;
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  content: "";
-  right: 20px;
-  top: 20px;
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../../icons/stack.svg#icon-cross-close");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    content: "";
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+}
+
+.header__button-close--disabled {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+.header__button-open {
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../../icons/stack.svg#icon-burger");
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: inherit;
+    content: "";
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   display: none;
+  // }
+}
+
+.header__button-open--disabled {
+
+  display: none;
 
 
   @media (min-width: $tablet-width) {

@@ -1,13 +1,17 @@
 .benefits {
   padding: 0 20px;
   padding-bottom: 49px;
+  width: $mobile-width;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0 109px 92px 30px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 106px 69px 110px;
+    width: $desktop-width;
   }
 }
 
@@ -34,7 +38,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  position: relative;
 
 
   @media (min-width: $tablet-width) {
@@ -45,21 +48,6 @@
   }
 }
 
-.benefits__list::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 768px;
-    height: 1px;
-    background-color: #e6e6e6;
-    bottom: -47px;
-    left: -31px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
 
 .benefits__item {
   position: relative;

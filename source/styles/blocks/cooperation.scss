@@ -1,11 +1,13 @@
 .cooperation {
   display: flex;
   padding: 26px 20px;
-
+  width: $mobile-width;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
     justify-content: space-between;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {

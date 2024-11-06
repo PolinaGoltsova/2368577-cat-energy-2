@@ -9,20 +9,16 @@
   gap: 40px;
   position: relative;
   padding: 40px 20px;
-  margin: 0 auto;
-  width: $mobile-width;
 
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     padding: 55px 30px;
-    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
-    width: $desktop-width;
   }
 }
 
@@ -42,7 +38,7 @@
     position: absolute;
     content: "";
     width: 280px;
-    height: 0.5px;
+    height: 1px;
     top: 145px;
     background-color: #d9d9d9;
   }
@@ -57,6 +53,9 @@
   width: 280px;
   justify-content: space-between;
 
+  &:hover svg path {
+    fill: $brand_green;
+  }
 
   &:active {
     opacity: 0.3;

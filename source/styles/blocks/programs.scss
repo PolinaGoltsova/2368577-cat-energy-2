@@ -1,16 +1,3 @@
-.programs {
-  width: $mobile-width;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
-}
-
 .programs__list {
   display: flex;
   flex-flow: column wrap;
@@ -178,6 +165,20 @@
   color: #000000;
   position: relative;
   text-transform: uppercase;
+
+  &:hover::after {
+    background-image: url("../../icons/stack.svg#icon-arrow-right-long");
+    width: 32px;
+    height: 12px;
+    position: absolute;
+    content: "";
+    left: 100px;
+    bottom: 1px;
+
+    @media (min-width: $tablet-width) {
+      left: 125px;
+    }
+  }
 
   &:active {
     opacity: 0.3;

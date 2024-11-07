@@ -25,6 +25,12 @@
   }
 }
 
+.navigation--border {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
 .navigation__item {
   list-style-type: none;
   min-height: 65px;

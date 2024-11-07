@@ -1,17 +1,13 @@
 .benefits {
   padding: 0 20px;
   padding-bottom: 49px;
-  width: $mobile-width;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0 109px 92px 30px;
-    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 106px 69px 110px;
-    width: $desktop-width;
   }
 }
 

@@ -8,6 +8,13 @@
   line-height: 20px;
   color: #111111;
   position: relative;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product-card-more__title::before {
@@ -24,9 +31,23 @@
 .product-card-more__text {
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .product-card-more__button {
   background-color: $basic_grey;
   color: $special_dark-grey;
+  display: block;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: $special_dark-grey;
+  }
 }

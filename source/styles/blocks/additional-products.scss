@@ -1,7 +1,3 @@
-// .additional-products {
-
-// }
-
 .additional-products__container {
   padding: 25px 20px 0;
 
@@ -15,9 +11,6 @@
 }
 
 .additional-products__wrapper-main {
-  // display: flex;
-  // flex-direction: column;
-
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;

@@ -12,7 +12,6 @@
 
 .catalog__wrapper {
   display: grid;
-  grid-template-columns: 320px;
 
 
   @media (min-width: $tablet-width) {
@@ -44,7 +43,3 @@
     padding: 0;
   }
 }
-
-// .catalog__contaiter {
-
-// }

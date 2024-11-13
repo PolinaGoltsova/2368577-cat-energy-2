@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header" data-test="header">
     <a class="main-logo" href="index.html">
       <picture>
         <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-picture-desktop.svg">
@@ -45,7 +45,7 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">CAT ENERGY - функциональное питание для котов</h1>
-    <section class="main-description">
+    <section class="main-description" data-test="main-description">
       <div class="main-description__wrapper">
         <h2 class="main-description__title">Функциональное питание&nbsp;для котов</h2>
         <p class="main-description__text">Занялся собой? Займись котом!</p>
@@ -64,7 +64,7 @@
         <a class="main-description__button button" href="#" aria-label="Подобрать программу корма для животного">Подобрать программу</a>
       </div>
     </section>
-    <section class="programs container">
+    <section class="programs container" data-test="programs">
       <h2 class="visually-hidden">Подобрать программу</h2>
       <ul class="programs__list">
         <li class="programs__item programs__item--slim">
@@ -79,7 +79,7 @@
         </li>
       </ul>
     </section>
-    <section class="benefits container">
+    <section class="benefits container" data-test="benefits">
       <h2 class="benefits__title">Как это работает</h2>
       <ul class="benefits__list">
         <li class="benefits__item benefits__item--leaf">
@@ -96,7 +96,7 @@
         </li>
       </ul>
     </section>
-    <section class="results">
+    <section class="results" data-test="results">
       <div class="results__container container">
         <h2 class="results__title">Живой пример</h2>
         <p class="results__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -132,7 +132,7 @@
         </div>
       </div>
     </section>
-    <section class="cooperation">
+    <section class="cooperation" data-test="cooperation">
       <div class="cooperation__wrapper container">
         <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
         <p class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
@@ -142,7 +142,7 @@
         </div>
       </div>
     </section>
-    <section class="map">
+    <section class="map" data-test="map">
       <h2 class="visually-hidden">Карта</h2>
       <iframe class="map__iframe" loading="lazy" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1749bafe1a4d317f923abe7bff50d1e7f415009fd697835fbb90958809d632f7&amp;source=constructor" height="362"></iframe>
       <div class="map__image-wrapper map__image-wrapper--hidden">
@@ -159,7 +159,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__container container">
       <a class="logo" href="index.html">
         <img class="logo__name-footer" src="images/logo-name.svg" width="128" height="24" alt="название логотипа Кэт энерджи">

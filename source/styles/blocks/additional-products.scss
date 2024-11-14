@@ -150,16 +150,20 @@
     padding: 26px 38px 28px;
 
     &:not(:first-child) {
-      border-top: none;
+      border-top: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
     border: 0;
-    border-top: 1px solid #cdcdcd;
     padding: 15px 0 17px;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #cdcdcd;
+
+    &:not(:first-child) {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 }
 

@@ -34,7 +34,6 @@
 
 .navigation__item {
   list-style-type: none;
-  // min-height: 65px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
   padding-top: 22px;
@@ -45,7 +44,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    // min-height: 50px;
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
